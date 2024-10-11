@@ -360,73 +360,84 @@ img {
 /* Be Part Of Us */
 #part__of__ous {
     background-color: blue;
-    padding-bottom: 35px;
-    padding-top: 35px;
+    padding: 35px 0;
+    text-align: center; /* Center-align text */
 }
 
 .mal {
-    margin-left: 350px;
-    padding-left: 200px;
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Remove excessive padding and make responsive */
+    max-width: 600px; /* Set max-width for the container */
 }
 
 .mal input {
     border: none;
-    padding: 14px 0;
-    margin: 0;
-    width: 50%;
+    padding: 14px;
+    margin: 10px 0;
+    width: 100%; /* Full width for inputs */
     height: 50px;
     display: block;
     border-radius: 0.5rem;
 }
 
-.mal .nputname {
-    margin: 5px 0;
-}
-
-.mal .nputemal {
-    margin: 5px 0;
-}
-
 .mal .nputSubmt {
     background-color: #1498cc;
     color: #fff;
-    border: none;
+    cursor: pointer;
 }
 
 .mal h4 {
     color: #fff;
-    padding-left: 25px;
-    font-size: 55px;
+    font-size: 36px; /* Adjusted font size */
+    margin-bottom: 20px;
 }
 
 .mal p {
     color: #fff;
-    padding-left: 20px;
     font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Media Query for small screens (mobile devices) */
+@media (max-width: 768px) {
+    .mal h4 {
+        font-size: 28px; /* Reduce heading size on mobile */
+    }
+
+    .mal p {
+        font-size: 16px; /* Slightly reduce paragraph text */
+    }
+
+    .mal input {
+        width: 100%; /* Ensure inputs take full width on smaller screens */
+    }
+
+    .nputSubmt {
+        height: 45px; /* Slightly smaller submit button on mobile */
+    }
+}
+
+/* Media Query for very small screens (below 480px) */
+@media (max-width: 480px) {
+    .mal h4 {
+        font-size: 24px; /* Further reduce heading size */
+    }
+
+    .mal p {
+        font-size: 14px;
+    }
+
+    .mal input {
+        padding: 12px;
+    }
+
+    .nputSubmt {
+        height: 40px;
+        font-size: 14px; /* Adjust button font size */
+    }
 }
 
 /* Footer */
-/* .foot {
-    background-color: aquamarine;
-}
-
-.foot p {
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-.foot .socialIcons i{
-    display: inline-block;
-    color: white;
-    font-size: 20px;
-    margin: 0 15px;
-    transition: 0.5s;
-}
-
-.foot .socialIcons i:hover{
-    color: #e91e64;
-} */
-
 .foot {
     padding: 5px;
     background-color: #f1f1f1;
