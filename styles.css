@@ -5,6 +5,68 @@
     font-family: "Roboto Mono", monospace;
 }
 
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #004274;
+    position: relative;
+    height: 70px;
+}
+
+.logo{
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #004274;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+}
+
 .navbar {
     background: gray;
     height: 80px;
@@ -35,7 +97,7 @@ img {
 
 #navbar__logo {
     background-color: blue;
-    background-image: linear-gradient(to top, black 0%, rgb(10, 188, 247) 100%);
+    background-image: linear-gradient(to top, rgb(134, 227, 118) 0%, rgb(140, 247, 10) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -184,7 +246,7 @@ img {
     font-size: 4rem;
     text-align: center;
     background-color: white;
-    background-image: linear-gradient(to top, blue 0%, white 100%);
+    background-image: linear-gradient(to top, rgb(247, 255, 251) 0%, white 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
