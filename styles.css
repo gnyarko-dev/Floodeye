@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Montserrat", sans-serif;
 }
 
 nav{
@@ -97,7 +97,7 @@ img {
 
 #navbar__logo {
     background-color: blue;
-    background-image: linear-gradient(to top, rgb(134, 227, 118) 0%, rgb(140, 247, 10) 100%);
+    background-image: linear-gradient(to top, rgb(236, 246, 235) 0%, rgb(155, 156, 155) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -225,7 +225,7 @@ img {
 
 /* Hero Section */
 .main {
-    background-image: url('images/worldflood.png');
+    background-image: url('images/worldflood2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -246,7 +246,7 @@ img {
     font-size: 4rem;
     text-align: center;
     background-color: white;
-    background-image: linear-gradient(to top, rgb(247, 255, 251) 0%, white 100%);
+    background-image: linear-gradient(to top, rgb(211, 224, 244) 0%, rgb(49, 86, 232) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -408,6 +408,7 @@ img {
 /* Missions and Values */
 #missions-values {
     background-color: #1498cc;
+    border-radius: 1.5rem;
 }
 
 .missions__card {
